@@ -16,15 +16,18 @@
         android:theme="@style/Theme.CoffeeTest"
         tools:targetApi="31">
         <activity
+            android:name=".activity.SignUpActivity"
+            android:theme="@style/Theme.CoffeeTest"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SignInActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.CartActivity"
             android:exported="false" />
         <activity
             android:name=".activity.ItemListActivity"
             android:exported="false" />
-        <activity
-            android:name=".activity.ItemsListActivity"
-            android:exported="false"
-            android:theme="@style/Theme.CoffeeTest" />
         <activity
             android:name=".activity.DetailsActivity"
             android:exported="false" />

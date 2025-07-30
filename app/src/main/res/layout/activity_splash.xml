@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@color/cream"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.SplashActivity">
@@ -17,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/splash_pic" />
+        app:srcCompat="@drawable/coffee" />
 
     <TextView
         android:id="@+id/textView"
@@ -28,7 +29,7 @@
         android:textSize="37sp"
         android:textStyle="bold"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/darkBrown"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -39,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="48dp"
         android:textSize="20sp"
-        android:textColor="@color/white"
+        android:textColor="@color/darkBrown"
         android:textAlignment="center"
         android:text="@string/the_best_grain_the_finest_roast_n_the_powerful_flavor"
         app:layout_constraintBottom_toTopOf="@+id/startBtn"

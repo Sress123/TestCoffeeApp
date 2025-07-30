@@ -27,6 +27,7 @@ class SplashActivity : AppCompatActivity() {
 
         val prefs = getSharedPreferences("init_prefs", MODE_PRIVATE)
         val isDataInserted = prefs.getBoolean("is_data_inserted", false)
+        val isUserLoggedIn = prefs.getBoolean("is_user_logged_in", false)
 
 
         if (!isDataInserted) {
@@ -35,7 +36,11 @@ class SplashActivity : AppCompatActivity() {
         }
 
         binding.startBtn.setOnClickListener {
-            startActivity(Intent(this@SplashActivity, MainActivity::class.java))
+            if (isUserLoggedIn) {
+                startActivity(Intent(this@SplashActivity, MainActivity::class.java))
+            } else {
+                startActivity(Intent(this@SplashActivity, SignInActivity::class.java))
+            }
             finish()
         }
     }
